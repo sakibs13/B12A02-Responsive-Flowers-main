@@ -52,13 +52,36 @@
 .primary-button{
     background-color: #FD6E0A;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1rem;
     color: white;
     border: none;
     border-radius: 5px;
      width: 100%;
     height: 3.125rem;
 
+}
+
+.primary-button1{
+    background-color: #FD6E0A;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+     width: 11.6rem;
+    height: 3.125rem;
+    padding: 0 0;
+    margin: 2px 0 2px;
+
+}
+
+section input{
+    border: none;
+    width: 40.25rem;
+    height: 3.125rem;
+    padding: 0 0 ;
+    margin: 0 0 ;
+  
 }
 
 /* mixed */
@@ -187,9 +210,113 @@ nav li a {
     margin: 7.5rem auto;
 }
 
+.plant-sell-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "bloom zabo zabo"
+    "ana   zabo zabo";
+  gap: 1rem;
+  max-width: 65rem;
+  margin: 7.5rem auto;
+  height: 26.25rem;
+}
+
+.deal-bloom {
+  grid-area: bloom;
+  background: url("../assets/deal-bloom.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 0.625rem;
+
+}
+
+.deal-ana {
+  grid-area: ana;
+  background: url("../assets/deal-ana.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 0.625rem;
+}
+
+.deal-zabo {
+  grid-area: zabo;
+  background: url("../assets/deal-zabo.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 0.625rem;
+}
+
+/* Text style */
+.plant-sell-grid h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.318rem;
+}
+
+.deal-bloom,
+.deal-ana,
+.deal-zabo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Overlay effect */
+.deal-bloom::before,
+.deal-ana::before,
+.deal-zabo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Text always above overlay */
+.deal-bloom h3,
+.deal-ana h3,
+.deal-zabo h3 {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.plant-shooping{
+    text-decoration: underline;
+}
 
 
 
+
+.subscribe {
+  background: url("../assets/news-letter-bg.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  max-width: 90rem;
+  height: 33.3rem;
+  margin: 0 auto;
+
+}
 @keyframes spin {
     from {
         transform: translateX(-50%) rotate(0deg);
