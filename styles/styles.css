@@ -74,6 +74,12 @@
     margin: 2px 0 2px;
 
 }
+.font-bold{
+    color: rgba(37, 36, 50, 1);
+}
+.font-orange{
+    color:rgba(233, 90, 8, 1)
+}
 
 section input{
     border: none;
@@ -315,7 +321,39 @@ nav li a {
   max-width: 90rem;
   height: 33.3rem;
   margin: 0 auto;
+  color: #fff;
 
+}
+
+/* footer design */
+.footer-main{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    max-width: 65rem;
+    margin: 3.125rem auto;
+}
+.footer-column1{
+    margin: 0 4.875rem 4.3125rem 0;
+}
+.footer-column2{
+    margin: 0 4.875rem 0 0;
+
+}
+.footer-column3{
+    margin: 0 4.875rem 0 0;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer-column4 img{
+    margin-right: 1.5rem;
 }
 @keyframes spin {
     from {
