@@ -472,8 +472,44 @@ section input{
     margin: 2px 0 2px;
 
 }
+
 .footer-main{
     display: grid;
     grid-template-columns: repeat(1, auto);
+
+}
+.footer-column1 p br {
+    display: none;
+  }
+
+.footer-column1{
+    margin: 0px 14px 20px 20px;
+}
+.footer-column2 ul {
+  margin: 0;
+  padding: 0;       
+}
+.footer-column2 ul a{
+    font-size: larger;
+}
+.footer-column2{
+    margin: 0px 374px 20px 0px;
+    padding-left: 20px;
+
+}
+.footer-column3 ul {
+  margin: 0;
+  padding: 0;  
+ }
+.footer-column3{
+    margin: 0px 231px 20px 0px;
+    padding-left: 20px;
+}
+.footer-column3 ul a{
+    font-size: larger;}
+ 
+.footer-column4{
+    padding-left: 20px;
+}    
 
 }
