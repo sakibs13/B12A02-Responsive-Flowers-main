@@ -67,11 +67,9 @@
     font-size: 1rem;
     color: white;
     border: none;
-    border-radius: 5px;
-     width: 11.6rem;
+    width: 11.6rem;
     height: 3.125rem;
     padding: 0 0;
-    margin: 2px 0 2px;
 
 }
 .font-bold{
@@ -406,6 +404,9 @@ footer ul a{
     {
         font-size: 2.4rem;
     }
+    .joining-log{
+        font-size: 1.6rem;
+    }
     .banner-profile-pic img{
         width: 100%;
     }
@@ -430,4 +431,49 @@ footer ul a{
 .mbl{
     margin: 1rem 1.78rem 3.25rem 1.78rem;
 }
+.plant-sell-grid {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-areas:
+    "bloom"
+    "ana"
+    "zabo";
+  gap: 1rem;
+  max-width: 65rem;
+  margin: 7.5rem auto;
+  height: auto;
+}
+.deal-bloom,
+.deal-ana,
+.deal-zabo{
+    height: 15rem;
+    width: auto;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: 0rem;
+}
+.deal-zabo{
+    margin-bottom: 50px;
+}
+section input{
+    border: none;
+    width: 15rem;
+    height: 3.125rem;
+}
+.primary-button1{
+     background-color: #FD6E0A;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border: none;
+     width: 6rem;
+    height: 3.125rem;
+    padding: 0 0;
+    margin: 2px 0 2px;
+
+}
+.footer-main{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+
 }
