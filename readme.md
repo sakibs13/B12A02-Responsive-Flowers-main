@@ -19,7 +19,7 @@
   - Cart icon with name on the right as Figma
   - Other navbar elements will be hidden for cleaner mobile experience
 
----
+----
 
 ### 2. Banner
 
