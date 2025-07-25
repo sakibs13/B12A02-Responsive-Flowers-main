@@ -355,6 +355,10 @@ footer ul a{
 .footer-column4 img{
     margin-right: 1.5rem;
 }
+
+.aaa{
+    display: none;
+}
 @keyframes spin {
     from {
         transform: translateX(-50%) rotate(0deg);
@@ -362,4 +366,68 @@ footer ul a{
     to {
         transform: translateX(-50%) rotate(360deg);
     }
+}
+
+@media screen and (max-width: 576px ) {
+
+     nav {
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-logo img{
+    width: 8rem;
+  }
+
+   nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  #cart-centre{
+   margin-left: 0rem;
+  }
+
+  .hide {
+    display: none;
+  }
+
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .banner-title-1,
+    .banner-title-2,
+    .plant-headline
+    {
+        font-size: 2.4rem;
+    }
+    .banner-profile-pic img{
+        width: 100%;
+    }
+
+    .plant-title{
+        padding: 0 2rem;
+    }
+    .plant-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.flower-logo-article {
+    display: flex;
+    flex-direction: column;
+}
+.flower-article {
+    margin: 2.375rem 0 2.375rem 0;
+}
+.flower-img img{
+    width: 100%;
+}
+.mbl{
+    margin: 1rem 1.78rem 3.25rem 1.78rem;
+}
 }
